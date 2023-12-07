@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .profile-picture {
+            width: 180px;
+            height: 180px;
+            background: url('https://i.ibb.co/FqNcfg7/Screenshot-20231107jj-215909-picsay.jpg') center/cover;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 10px white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .portfolio {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .project {
+            width: calc(30% - 20px);
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Responsive Styling */
+        @media only screen and (max-width: 768px) {
+            .portfolio {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                width: 80%;
+            }
+        }
+
+        /* Bottom Menu Styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .snowball{position:fixed;top:0;left:0;right:0;pointer-events:none;z-index:20}
+.snowsand{height:100%;position:relative;overflow:hidden;z-index:1}
+    </style>
+</head>
+<body>
+  <div class='snowsand'>
+<canvas class='snowball' id='snowball'></canvas>
+</div>
+    <header>
+        <div class="profile-picture"></div>
+        <h1>Hi, I am <span style="color: yellow;">Fansyah</span></h1>
+<p>I am a junior web developer. I can provide clean code and clean website design.</p>
+<!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://instagram.com/fansyah.xyz/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/6289615199264/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://facebook.com/fanstoreku" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <!-- Tambahkan project Anda di sini -->
+        <div class="project">
+            <!--<img src="project1.jpg" alt="Project 1">-->
+            <a href="https://fanstore.site"><h3>Project Fanstore</h3></a>
+            <p>I make website for selling social media marketing and digital product</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p style="margin-top: -5px;">© Copyright 2024</p><br>
+    </footer>
+
+    <!-- Bottom Menu -->
+    <nav>
+      <hr>
+        <a href="#home">Home</a>
+        <a href="#">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+    
+    <script type='text/javascript'>
+//<![CDATA[
+!function(){function t(t){var n=t.getContext("2d"),e=0,i=0,o=[],d=function(){this.x=this.y=this.dx=this.dy=0,this.reset()};function a(){e=window.innerWidth,i=window.innerHeight,t.width=e,t.height=i,function(t){if(t!=o.length){o=[];for(var n=0;n<t;n++)o.push(new d)}}(e*i/1e4)}d.prototype.reset=function(){this.y=Math.random()*i,this.x=Math.random()*e,this.dx=1*Math.random()-.5,this.dy=.5*Math.random()+.5},a(),function t(){n.clearRect(0,0,e,i),n.fillStyle="rgba(255,255,255,.3)",o.forEach(function(t){t.y+=t.dy,t.x+=t.dx,t.y>i&&(t.y=0),t.x>e&&(t.reset(),t.y=0),n.beginPath(),n.arc(t.x,t.y,5,0,2*Math.PI,!1),n.fill()}),window.requestAnimationFrame(t)}(),window.addEventListener("resize",a)}var n;n=function(){t(document.getElementById("snowball"))},"loading"!=document.readyState?n():document.addEventListener("DOMContentLoaded",n)}();
+//]]></script>
+</body>
+</html
