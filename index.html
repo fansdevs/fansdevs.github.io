@@ -12,22 +12,24 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            background: url('https://i.giphy.com/8PpNcdatWAvWk3s7c9.webp');
+    background-size: cover;
         }
 
         header {
             text-align: center;
-            padding: 25px 0;
-            background-color: #333;
+            padding: 25px 0
             color: #fff;
         }
 
         .profile-picture {
             width: 180px;
             height: 180px;
-            background: url('https://fanstore.site/upload/favicon.png') center/cover;
+            background: url('https://i.ibb.co/FqNcfg7/Screenshot-20231107jj-215909-picsay.jpg') center/cover;
             border-radius: 50%;
             margin: 0 auto 20px;
             box-shadow: 0 0 10px white;
+            margin-top: 15px;
         }
 
         header h1 {
@@ -39,19 +41,21 @@
             font-style: italic;
         }
 
-        .portfolio {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
+    .portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    }
+
 
         .project {
             width: calc(30% - 20px);
             margin-bottom: 20px;
             background-color: #fff;
             padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px #333;
+            border-radius: 10px;
         }
 
         footer {
@@ -120,8 +124,8 @@
             <a href="https://wa.me/6289615199264/" target="_blank"><i class="bi bi-whatsapp"></i></a>
             <a href="https://facebook.com/fanstoreku" target="_blank"><i class="bi bi-facebook"></i></a>
         </div>
-    </header>
-
+    </header><br>
+<center><b><span style="color: brown">MY PROJECTS</span></b></center>
     <section class="portfolio">
         <!-- Tambahkan project Anda di sini -->
         <div class="project">
@@ -148,8 +152,14 @@
     </section>
 
     <footer>
-        <p style="margin-top: -5px;">© Copyright 2024</p><br>
-    </footer>
+    <p style="margin-top: -5px;">© Copyright <span id="tahun"></span></p><br>
+</footer>
+
+<script>
+    var tahunSaatIni = new Date().getFullYear();
+    document.getElementById("tahun").innerHTML = tahunSaatIni;
+</script>
+
 
     <!-- Bottom Menu -->
     <nav>
